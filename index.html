@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kolendra</title>
+  <link rel="stylesheet" href="css/kolendra.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/prism.css" />
+</head>
+<body>
+  <header>
+    <h1 class="heading heading-1 header__title">Kolendra.CSS</h1>
+    <a class="btn btn-outline header__link--download" id="btn-download" href="./css/kolendra.css" download>Pobierz</a>
+  </header>
+  <aside>
+  <ul class="nav nav__container">
+    <li class="nav__item"><a href="#alerts" class="nav__link">Alerty</a></li>
+    <li class="nav__item">
+      <a href="#forms" class="nav__link">Formularze</a>
+      <ul class="nav__container">
+        <li class="nav__item">
+          <a href="#form__labels" class="nav__link">Etykiety</a>
+        </li>
+        <li class="nav__item">
+          <a href="#form__input" class="nav__link">Pola tekstowe</a>
+        </li>
+        <li class="nav__item">
+          <a href="#form__input-readonly" class="nav__link">Pola tylko do odczytu</a>
+        </li>
+    </ul>
+    </li>
+    <li class="nav nav__item">
+      <a href="#headings" class="nav__link">Nagłówki</a>
+    </li>
+    <li class="nav nav__item">
+      <a href="#buttons" class="nav__link">Przyciski</a>
+    </li>
+  </ul>
+  </aside>
+  <main>
+  <section>
+    <h2 class="heading heading-2" id="alerts">Alerty</h2>
+    <p>Służą do przekazania informacji użytkownikowi</p>
+    <div class="alert">To jest normalny alert</div>
+    <div class="alert alert-success">Alert ukazujący sukces</div>
+    <div class="alert alert-info">Alert ukazujący informacje</div>
+    <div class="alert alert-warning">Alert ukazujący ostrzeżenie</div>
+    <div class="alert alert-error">Alert ukazujący błąd</div>
+    <pre>
+      <code class="language-markup">
+  &#x3C;div class=&#x22;alert&#x22;&#x3E;To jest normalny alert&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;alert alert-success&#x22;&#x3E;Alert ukazuj&#x105;cy sukces&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;alert alert-info&#x22;&#x3E;Alert ukazuj&#x105;cy informacje&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;alert alert-warning&#x22;&#x3E;Alert ukazuj&#x105;cy ostrze&#x17C;enie&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;alert alert-error&#x22;&#x3E;Alert ukazuj&#x105;cy b&#x142;&#x105;d&#x3C;/div&#x3E;
+    </code>
+  </pre>
+  </section>
+  <section>
+    <h2 class="heading heading-2" id="forms">Formularze</h2>
+    <article>
+      <h3 class="heading heading-3" id="form__labels">Etykiety</h3>
+      <form class="form form-column">
+        <div>
+          <label for="name">Imię: </label>
+          <input type="text" class="input-text" placeholder="Podaj swoje imię" id="name">
+        </div>
+    
+        <div>
+          <input type="radio" class="input-radio" id="male" name="gender" value="male">
+          <label for="male">Mężczyzna</label>
+        </div>
+    
+        <div>
+          <input type="radio" class="input-radio" id="female" name="gender" value="female">
+          <label for="female">Kobieta</label>
+        </div>
+    
+        <div>
+          <input type="radio" class="input-radio" id="other" name="gender" value="other">
+          <label for="other">Inne</label>
+        </div>
+      </form>
+      <pre>
+        <code class="language-markup">&#x3C;form class=&#x22;form form-column&#x22;&#x3E;
+        &#x3C;div&#x3E;
+          &#x3C;label for=&#x22;name&#x22;&#x3E;Imi&#x119;: &#x3C;/label&#x3E;
+          &#x3C;input type=&#x22;text&#x22; class=&#x22;input-text&#x22; placeholder=&#x22;Podaj swoje imi&#x119;&#x22; id=&#x22;name&#x22;&#x3E;
+        &#x3C;/div&#x3E;
+
+        &#x3C;div&#x3E;
+          &#x3C;input type=&#x22;radio&#x22; class=&#x22;input-radio&#x22; id=&#x22;male&#x22; name=&#x22;gender&#x22; value=&#x22;male&#x22;&#x3E;
+          &#x3C;label for=&#x22;male&#x22;&#x3E;M&#x119;&#x17C;czyzna&#x3C;/label&#x3E;
+        &#x3C;/div&#x3E;
+
+        &#x3C;div&#x3E;
+          &#x3C;input type=&#x22;radio&#x22; class=&#x22;input-radio&#x22; id=&#x22;female&#x22; name=&#x22;gender&#x22; value=&#x22;female&#x22;&#x3E;
+          &#x3C;label for=&#x22;female&#x22;&#x3E;Kobieta&#x3C;/label&#x3E;
+        &#x3C;/div&#x3E;
+
+        &#x3C;div&#x3E;
+          &#x3C;input type=&#x22;radio&#x22; class=&#x22;input-radio&#x22; id=&#x22;other&#x22; name=&#x22;gender&#x22; value=&#x22;other&#x22;&#x3E;
+          &#x3C;label for=&#x22;other&#x22;&#x3E;Inne&#x3C;/label&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;/form&#x3E;</code>
+      </pre>
+    </article>
+    <article class="input-text-article">
+      <h3 class="heading heading-3" id="form__input">Pole tekstowe</h3>
+      <form class="form">
+        <input type="text" class="input-text">
+        <input type="text" class="input-text">
+      </form>
+      <pre>
+        <code class="language-markup">&lt;form class=&quot;form&quot;&gt;
+      &lt;input type=&quot;text&quot; class=&quot;input-text&quot;&gt;
+      &lt;input type=&quot;text&quot; class=&quot;input-text&quot;&gt;
+    &lt;/form&gt;</code>
+      </pre>
+    </article>
+    <article>
+      <h3 class="heading heading-3" id="form__input-readonly">Pole tylko do odczytu</h3>
+      <input type="text" class="input-text" readonly="readonly" placeholder="Pole tylko do odczytu">
+      <pre>
+        <code class="language-markup">&#x3C;input type=&#x22;text&#x22; class=&#x22;input-text&#x22; readonly=&#x22;readonly&#x22; placeholder=&#x22;Pole tylko do odczytu&#x22;&#x3E;</code>
+      </pre>
+    </article>
+  </section>  
+  <section>
+    <h2 class="heading heading-2" id="headings">Nagłówki</h2>
+    <article>
+      <p>Przykłady zastosowania nagłówków aby ustrukturyzować treści na stronie</p>
+      <h1 class="heading heading-1">Nagłówek 1 poziomu</h1>
+      <h2 class="heading heading-2">Nagłówek 2 poziomu</h2>
+      <h3 class="heading heading-3">Nagłówek 3 poziomu</h3>
+      <h4 class="heading heading-4">Nagłówek 4 poziomu</h4>
+      <h5 class="heading heading-5">Nagłówek 5 poziomu</h5>
+      <h6 class="heading heading-6">Nagłówek 6 poziomu</h6>
+      <pre>
+        <code class="language-markup">&lt;h1 class=&quot;heading heading-1&quot;&gt;Nagłówek 1 poziomu&lt;/h1&gt;
+        &lt;h2 class=&quot;heading heading-2&quot;&gt;Nagłówek 2 poziomu&lt;/h2&gt;
+        &lt;h3 class=&quot;heading heading-3&quot;&gt;Nagłówek 3 poziomu&lt;/h3&gt;
+        &lt;h4 class=&quot;heading heading-4&quot;&gt;Nagłówek 4 poziomu&lt;/h4&gt;
+        &lt;h5 class=&quot;heading heading-5&quot;&gt;Nagłówek 5 poziomu&lt;/h5&gt;
+        &lt;h6 class=&quot;heading heading-6&quot;&gt;Nagłówek 6 poziomu&lt;/h6&gt;</code>
+      </pre>
+    </article>
+  </section>
+  <section>
+    <h2 class="heading heading-2" id="buttons">Przyciski</h2>
+    <article>
+      <h3 class="heading heading-3" id="forms__labels">Przyciski klasyczne</h3>
+      <button type="button" class="btn">Normalny przycisk</button>
+      <button type="button" class="btn btn-success">Przycisk sukcesu</button>
+      <button type="button" class="btn btn-info">Informacyjny przycisk</button>
+      <button type="button" class="btn btn-warning">Ostrzegający przycisk</button>
+      <button type="button" class="btn btn-error">Przycisk błędu</button>
+      <pre>
+      <code class="language-markup">
+      &lt;button type=&quot;button&quot; class=&quot;btn&quot;&gt;Normalny przycisk&lt;/button&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn btn-success&quot;&gt;Przycisk sukcesu&lt;/button&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot;&gt;Informacyjny przycisk&lt;/button&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn btn-warning&quot;&gt;Ostrzegający przycisk&lt;/button&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn btn-error&quot;&gt;Przycisk błędu&lt;/button&gt;
+      </code>
+      </pre>
+    </article>
+    <article>
+      <h3 class="heading heading-3" id="forms__labels">Przyciski z obrysem</h3>
+      <button type="button" class="btn btn-outline">Normalny przycisk</button>
+      <button type="button" class="btn btn-success btn-outline-success">Przycisk sukcesu</button>
+      <button type="button" class="btn btn-info btn-outline-info">Informacyjny przycisk</button>
+      <button type="button" class="btn btn-warning btn-outline-warning">Ostrzegający przycisk</button>
+      <button type="button" class="btn btn-error btn-outline-error">Przycisk błędu</button>
+      <pre>
+        <code class="language-markup">&lt;button type=&quot;button&quot; class=&quot;btn&quot;&gt;Normalny przycisk&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-success&quot;&gt;Przycisk sukcesu&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot;&gt;Informacyjny przycisk&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-warning&quot;&gt;Ostrzegający przycisk&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-error&quot;&gt;Przycisk błędu&lt;/button&gt;</code>
+      </pre>
+    </article>
+  </section>
+  <footer>
+    <p>Wykonanie: <a href="https://www.kubafila.pl" class="footer__link">KubaFila.pl</a></p>
+    <p>Kolorowanie składni kodu - <a href="https://prismjs.com/" class="footer__link">Prism.js</a></p>
+  </footer>
+  </main>
+  <script src="./js/prism.js"></script>
+</body>
+</html>
