@@ -41,14 +41,8 @@
   --color-error-light: rgba(255, 0, 0, 0.2);
 }
 
-* {
-  padding: 0;
-  margin: 0;
-}
-
 /* ----------------- HEADERS ----------------- */
 .heading {
-  margin: var(--offset-default);
   color: var(--color-dark-green);
   font-family: 'Cabin', sans-serif;
   font-weight: 300;
@@ -84,10 +78,8 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin: var(--offset-default);
   padding: var(--offset-small) var(--offset-default);
-
-
+  
   border: 1px solid var(--color-secondary);
   border-radius: var(--border-radius--default);
   background-color: var(--color-secondary);
@@ -175,19 +167,6 @@
 .btn-outline-error:hover{
   background-color: var(--color-error-light);
 }
-/* ----------------- FORMS ----------------- */
-
-.form {
-  margin: var(--offset-default);
-}
-
-.form-column{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
 /* ----------------- LABELS ----------------- */
 label{
 font-family: 'Lato',sans-serif;
@@ -198,7 +177,6 @@ font-weight: 500;
 /* ----------------- INPUTS ----------------- */
 
 .input-text {
-  margin: var(--offset-default);
   padding: var(--offset-small);
   
   border: var(--border-default);
@@ -231,13 +209,11 @@ input[readonly="readonly"].input-text:focus {
 }
 
 .input-radio{
-  margin: var(--offset-default) 0;
   padding: var(--offset-small) 0;
 }
 
 /* ----------------- ALERTS ----------------- */
 .alert{
-  margin: var(--offset-large);
   padding: var(--offset-default);
   
   border:var(--border-small);
