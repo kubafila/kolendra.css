@@ -1,3 +1,8 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
 body{
   display: grid;
   grid-template-columns: 15vw 1fr;
@@ -7,6 +12,8 @@ body{
   width: 100vw;
   
   background-color: #fff;
+
+  overflow-y: hidden;
   
   font-family: 'Lato',sans-serif;
   font-weight: 400;
@@ -104,6 +111,12 @@ section .header-2:first-child {
 
 .input-text-article input:first-child{
   margin-left: 0;
+}
+
+.buttons-container{
+  display: flex;
+  margin: var(--offset-default) 0;
+  justify-content: space-between;
 }
 footer{
   display: flex;
